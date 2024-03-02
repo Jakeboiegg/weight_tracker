@@ -4,6 +4,7 @@ import math
 
 def main():
     data_file = "weight_data.json" #weight_data.json or dev_data.json
+    print(f"writing in: {data_file}")
 
     current_date = str(datetime.date.today())
     option = input("read, write, or replace weight data: ")
@@ -57,13 +58,12 @@ def main():
             print("invalid input\n")
 
 def display_formatted(data):
-    print()
     for date,weight in data.items():
         print("{} : {}".format(date,weight))
+    print()
 
 def display_last_x(data,number_of_entrys):
     entrys_displayed = 0
-    print()
 
     reversed_data = sorted(data.items(), key=lambda x: x[1], reverse=True)
 
