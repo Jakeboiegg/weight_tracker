@@ -59,6 +59,7 @@ def option_write(data_file):
         data[current_date] = [str(new_weight),1]
 
     write(data_file,data)
+    print(\nsuccess)
 
 def option_replace(data_file):
     data = read(data_file)
