@@ -2,7 +2,7 @@
 import json
 import datetime
 
-data_file = "dev_data.json"
+data_file = "weight_data.json"
 
 def main():
     print()
